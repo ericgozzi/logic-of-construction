@@ -2,6 +2,10 @@
 html{
     scroll-behavior: smooth;
 }
+
+section{
+    margin-top: 100px;
+}
 section.drawing{
     align-items: center;
 }
@@ -9,11 +13,24 @@ img{
     width: 50%;
     display: inline-block;
     align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
 
 }
 
 img.carousel{
     width: 100px;
     display: inline;
+    margin: 1px;
 }
+
+
+video{
+    width: 50%;
+    display: inline-block;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 
