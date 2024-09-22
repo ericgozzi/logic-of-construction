@@ -1,0 +1,19 @@
+
+html{
+    scroll-behavior: smooth;
+}
+section.drawing{
+    align-items: center;
+}
+img{
+    width: 50%;
+    display: inline-block;
+    align-items: center;
+
+}
+
+img.carousel{
+    width: 100px;
+    display: inline;
+}
+
