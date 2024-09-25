@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Random Stuff</title>
+    <title>THE FACTORY</title>
 </head>
 <body>
 
     <!-- Main Content Section -->
     <main>
 
-        <h1> LOGIC OF CONSTRUCTION</h1>
+        <h1>THE FACTORY</h1>
+
+        <section id="menu">
+            <p class="menu-item" onclick="goToCosmicGarage()"> COSMIC GARAGE </p>
+            <p class="menu-item" onclick="showCarousel()"> CAROUSEL </p>
+        </section>
         
-        <section class="carousel">
-            <a href="#musicFactory"><img src="./public/musicFactory.png" class="carousel"></a>
+        <section id = "carousel"> <a href="#musicFactory"><img src="./public/musicFactory.png" class="carousel"></a>
             <a href="#vinylTransporter"><img src="./public/vinylTransporter_night.png" class="carousel"></a>
             <a href="#LightHouse"><img src="./public/LightHouse.png" class="carousel"></a>
             <a href="#fruits"><img src="./public/fruits.png" class="carousel"></a>
-
-
         </section>
 
         <section class="drawing" id="musicFactory">
@@ -46,4 +48,5 @@
 
     </main>
 </body>
+<script>carousel = document.getElementById("carousel").style.display = "none"</script>
 </html>

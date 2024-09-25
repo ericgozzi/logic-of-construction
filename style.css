@@ -33,4 +33,19 @@ video{
     margin-right: 25%;
 }
 
+#carousel{
+    display: none;
+}
+
+
+p.menu-item{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p.menu-item:hover{
+    cursor: pointer;;
+
+}
 
