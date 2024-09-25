@@ -17,3 +17,13 @@ function goToCosmicGarage(){
 function main(){
     document.getElementById("carousel").display.style = "none";
 }
+
+function openImage(media){
+    lightBox = document.getElementById("lightbox");
+    lightBox.style.display = "block";
+    lightBox.innerHTML = '<p onclick="closeLightbox()"> X </p> <img src = "' + media.src + '">"';
+}
+
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
