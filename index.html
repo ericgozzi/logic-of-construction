@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>THE FACTORY</title>
+    <title>SMORGASBORDIC FACTORY</title>
 </head>
 <body>
 
     <!-- Main Content Section -->
     <main>
 
-        <h1>THE FACTORY</h1>
+        <h1>SMORGASBORDIC FACTORY</h1>
 
         <section id="menu">
             <p class="menu-item" onclick="goToCosmicGarage()"> COSMIC GARAGE </p>
             <p class="menu-item" onclick="showCarousel()"> CAROUSEL </p>
+            <p class="menu-item" onclick="showAbout()"> ABOUT </p>
         </section>
         
         <section id = "carousel"> <a href="#musicFactory"><img src="./public/musicFactory.png" class="carousel"></a>
             <a href="#vinylTransporter"><img src="./public/vinylTransporter_night.png" class="carousel"></a>
             <a href="#LightHouse"><img src="./public/LightHouse.png" class="carousel"></a>
             <a href="#fruits"><img src="./public/fruits.png" class="carousel"></a>
+        </section>
+
+        <section id="about">
+            <p>
+                Smorgasbordic Factory (noun): <br>
+                A place or concept characterized by the production or creation of a diverse and eclectic 
+                range of elements, ideas, or experiences, similar to the variety found in a smorgasbord.
+            </p>
         </section>
 
         <section id="lightbox">
@@ -52,5 +61,9 @@
 
     </main>
 </body>
-<script>carousel = document.getElementById("carousel").style.display = "none"</script>
+<script>
+ document.getElementById("carousel").style.display = "none"
+  document.getElementById("about").style.display = "none"
+
+ </script>
 </html>

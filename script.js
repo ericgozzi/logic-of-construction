@@ -27,3 +27,13 @@ function openImage(media){
 function closeLightbox(){
     document.getElementById("lightbox").style.display = "none";
 }
+
+function showAbout(){
+    about = document.getElementById("about")
+    console.log(about.style.display)
+    if(about.style.display == "none"){
+        about.style.display = "block"
+    }else{
+        about.style.display = "none"
+    }
+}
