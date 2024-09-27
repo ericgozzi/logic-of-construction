@@ -18,6 +18,17 @@ img{
 
 }
 
+img#lightBoxMedia{
+    justify-items: center;
+    max-height: 90%;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+
+}
+
 img.carousel{
     width: 100px;
     display: inline;
@@ -45,17 +56,33 @@ p.menu-item{
 }
 
 p.menu-item:hover{
-    cursor: pointer;;
+    position: fixed;
+    cursor: pointer;
+    z-index: 101;
+}
 
+p.closeButton{
+    margin: 0px;
 }
 
 section#lightbox{
     display: none;
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 90vw;
+    height: 90vh;
     background-color: gray;
     z-index: 100;
     top: 0%;
     margin: 0%;
+    top: 5vh;
+    left: 5vw;
+}
+
+div#lightBoxButtonDiv{
+    height: 5%;
+    margin: 0px;
+}
+div#imageDiv{
+    height: 95%;
+    margin: 0px;
 }

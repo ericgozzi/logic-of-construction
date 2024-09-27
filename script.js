@@ -14,14 +14,12 @@ function goToCosmicGarage(){
 }
 
 
-function main(){
-    document.getElementById("carousel").display.style = "none";
-}
 
 function openImage(media){
     lightBox = document.getElementById("lightbox");
     lightBox.style.display = "block";
-    lightBox.innerHTML = '<p onclick="closeLightbox()"> X </p> <img src = "' + media.src + '">"';
+    imageDiv = document.getElementById("imageDiv")
+    imageDiv.innerHTML = ' <img id="lightBoxMedia" src = "' + media.src + '">';
 }
 
 function closeLightbox(){
@@ -35,5 +33,4 @@ function showAbout(){
         about.style.display = "block"
     }else{
         about.style.display = "none"
-    }
-}
+    }}
