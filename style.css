@@ -1,6 +1,25 @@
+@font-face{
+    font-family: Staatliches;
+    src: url(./public/Staatliches-Regular.ttf)
+}
+
+
 
 html{
     scroll-behavior: smooth;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+    font-family: Staatliches;
+    font-size: 40px;
+}
+h2{
+    font-family: Staatliches;
+}
+p{
+    font-family: Staatliches;
 }
 
 section{
@@ -15,7 +34,10 @@ img{
     align-items: center;
     margin-left: 25%;
     margin-right: 25%;
+}
 
+img:hover{
+    cursor: pointer;
 }
 
 img#lightBoxMedia{
@@ -56,13 +78,14 @@ p.menu-item{
 }
 
 p.menu-item:hover{
-    position: fixed;
-    cursor: pointer;
-    z-index: 101;
-}
+    cursor: pointer;}
 
 p.closeButton{
     margin: 0px;
+}
+
+p.closeButton{
+    cursor: pointer;
 }
 
 section#lightbox{
