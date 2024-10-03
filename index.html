@@ -16,9 +16,18 @@
         <h1>SMORGASBORDIC FACTORY</h1>
 
         <section id="menu">
-            <p class="menu-item" onclick="goToCosmicGarage()"> COSMIC GARAGE </p>
-            <p class="menu-item" onclick="showCarousel()"> CAROUSEL </p>
-            <p class="menu-item" onclick="showAbout()"> ABOUT </p>
+            <div class="menu-item" id="comsicGarageButton" onclick="goToCosmicGarage()"> <p>COSMIC GARAGE</p> </div>
+            <div class="menu-item" id="carouselButton" onclick="showCarousel()"> <p>CAROUSEL</p></div>
+            <div class="menu-item" id="aboutButton" onclick="showAbout()"> <P>ABOUT</P> </div>
+        </section>
+
+        <section id="about">
+            
+            <h2>    Smorgasbordic Factory (noun):</h2>
+            <p>
+                A place or concept characterized by the production or creation of a diverse and eclectic 
+                range of elements, ideas, or experiences, similar to the variety found in a smorgasbord.
+            </p>
         </section>
         
         <section id = "carousel"> <a href="#musicFactory"><img src="./public/musicFactory.png" class="carousel"></a>
@@ -27,34 +36,30 @@
             <a href="#fruits"><img src="./public/fruits.png" class="carousel"></a>
         </section>
 
-        <section id="about">
-            <p>
-                Smorgasbordic Factory (noun): <br>
-                A place or concept characterized by the production or creation of a diverse and eclectic 
-                range of elements, ideas, or experiences, similar to the variety found in a smorgasbord.
-            </p>
-        </section>
-
         <section id="lightbox">
             <div id="lightBoxButtonDiv">
                 <p onclick="closeLightbox()" class="closeButton"> X </p>
             </div>
-            <div id="imageDiv">
-
+            <div id="lightboxContent">
+                <div id="imageDiv">
+                </div>
+                <div id="descriptionDiv">
+                    <h2 class="description"> Music Factory </h2>
+                </div>
             </div>
         </section>
 
         <section class="drawing" id="musicFactory">
             <h2>Music Factory</h2>
-            <img src = "./public/musicFactory.png" onclick="openImage(this)">
+            <img src = "./public/musicFactory.png" onclick="openImage(this)" alt="MusicFactory">
         </section>
         <section class="drawing" id="vinylTransporter">
             <h2>Record Transoporter</h2>
-            <img src = "./public/vinylTransporter_night.png" onclick="openImage(this)">
+            <img src = "./public/vinylTransporter_night.png" onclick="openImage(this)" alt="RecordTransporter">
         </section>
         <section class="drawing" id="LightHouse">
             <h2>Lighthouse</h2>
-            <img src = "./public/LightHouse.png" onclick="openImage(this)">
+            <img src = "./public/LightHouse.png" onclick="openImage(this)" alt="Lighthouse">
         </section>
         <section class="drawing" id="fruits">
             <video loop controls autoplay>

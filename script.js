@@ -20,6 +20,11 @@ function openImage(media){
     lightBox.style.display = "block";
     imageDiv = document.getElementById("imageDiv")
     imageDiv.innerHTML = ' <img id="lightBoxMedia" src = "' + media.src + '">';
+    console.log(media.alt)
+    imageAlt = media.alt;
+    imageDescription = getRightDescription(imageAlt);
+    descriptionDiv = document.getElementById("descriptionDiv");
+    descriptionDiv.innerHTML = imageDescription;
 }
 
 function closeLightbox(){
@@ -34,3 +39,13 @@ function showAbout(){
     }else{
         about.style.display = "none"
     }}
+
+function getRightDescription(drawingTitle){
+    if(drawingTitle == "MusicFactory"){
+        return "<h2 class='description'>Music Factory</h2><p class='description'>2022</p><p class='description'>60 x 80</p></div>"
+    }else if(drawingTitle =="RecordTransporter"){
+        return "<h2 class='description'>Record Transporter</h2><p class='description'>2022</p><p class='description'>60 x 80</p></div>"
+    }else if(drawingTitle =="Lighthouse"){
+        return "<h2 class='description'>Lighthouse</h2><p class='description'>2022</p><p class='description'>60 x 80</p></div>"
+    }
+}
